@@ -1,0 +1,54 @@
+.socials{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  padding: 16px  16px ;
+  scroll-behavior: smooth;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.socialsiconback{
+  color: white;
+  background-color: #df8b0db5;
+  height: 55px;
+  width: 55px;
+  font-size: 34px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.socialsiconback:hover{
+  background: linear-gradient(45deg, #df8b0db5, #ffffff42, #df8b0db5);
+  background-size: 400% 400%;
+  -webkit-animation: div-text-hover 2s ease infinite;
+  animation: div-text-hover 2s ease infinite;
+  animation-fill-mode: forwards;
+  color: white;
+
+}
+@keyframes div-text-hover {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+.iconsbackcirclepadding{
+  margin-left: 7px;
+  margin-right: 7px;
+}

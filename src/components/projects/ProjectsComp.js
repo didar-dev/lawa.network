@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./projects.css";
-import wallpaper from "../assets/wallpaper.png";
 
-export default class About extends Component {
+export default class projects extends Component {
   render() {
     return (
       <section id="Projects">

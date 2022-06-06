@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <NavbarComp></NavbarComp>
       <HomeComp></HomeComp>
-       <PrijectsComp></PrijectsComp>
+      <PrijectsComp></PrijectsComp>
       <AboutComp></AboutComp>
     </div>
   );

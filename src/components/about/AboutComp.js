@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./about.css";
 import lawam from "../assets/lawam.jpg";
 import { FaGraduationCap, FaHome, FaHeart } from "react-icons/fa";
+import SocialsComp from "../socials/SocialsComp";
 
 export default class About extends Component {
   render() {
@@ -16,6 +17,8 @@ export default class About extends Component {
                   <h3>Didar Abdulkhaliq</h3>
 
                   <p>I'm a full stack web developer, from Kurdistan,<br></br> with a primary focus on React. </p>
+                  <SocialsComp></SocialsComp>
+
                 </div>
 
                 <div className="abotmetextlines">
