@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./projects.css";
+import { FaLink } from "react-icons/fa";
 
 export default class projects extends Component {
   render() {
@@ -8,28 +9,84 @@ export default class projects extends Component {
         <header>
           <div className="projectss">
             <p className="largeprojectsstext">My Projects</p>
-            <div className="myprojects">
             <div className="projectboxs">
-                <div class="pnamecs">This Website</div>
-                <div class="pnamecsmall">This Website one of my projects that i designed </div>
-
-            </div>
-            <div className="projectboxs">
-                <div class="pnamecs">Coming Project</div>
-                <div class="pnamecsmall">im working on projects :D it will be here soon</div>
-
-            </div>
-            <div className="projectboxs">
-                <div class="pnamecs">Coming Project</div>
-                <div class="pnamecsmall">im working on projects :D it will be here soon</div>
-
-            </div>
-            <div className="projectboxs">
-                <div class="pnamecs">Coming Project</div>
-                <div class="pnamecsmall">im working on projects :D it will be here soon</div>
-
-            </div>
-  
+              <div className="myprojects">
+                <div className="previewlink">
+                  <a
+                    className="projectlink"
+                    href="https://www.didar.dev"
+                  >
+                    {" "}
+                    <FaLink />
+                  </a>
+                </div>
+              </div>
+              <div className="myprojects">
+                <div className="previewlink">
+                  <a
+                    className="projectlink"
+                    href="https://www.didar.dev"
+                  >
+                    {" "}
+                    <FaLink />
+                  </a>
+                </div>
+              </div>
+              <div className="myprojects">
+                <div className="previewlink">
+                  <a
+                    className="projectlink"
+                    href="https://www.didar.dev"
+                  >
+                    {" "}
+                    <FaLink />
+                  </a>
+                </div>
+              </div>
+              <div className="myprojects">
+                <div className="previewlink">
+                  <a
+                    className="projectlink"
+                    href="https://www.didar.dev"
+                  >
+                    {" "}
+                    <FaLink />
+                  </a>
+                </div>
+              </div>
+              <div className="myprojects">
+                <div className="previewlink">
+                  <a
+                    className="projectlink"
+                    href="https://www.didar.dev"
+                  >
+                    {" "}
+                    <FaLink />
+                  </a>
+                </div>
+              </div>
+              <div className="myprojects">
+                <div className="previewlink">
+                  <a
+                    className="projectlink"
+                    href="https://www.didar.dev"
+                  >
+                    {" "}
+                    <FaLink />
+                  </a>
+                </div>
+              </div>
+              <div className="myprojects">
+                <div className="previewlink">
+                  <a
+                    className="projectlink"
+                    href="https://www.didar.dev"
+                  >
+                    {" "}
+                    <FaLink />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </header>
