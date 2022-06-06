@@ -4,15 +4,20 @@
   width: 100%;
 }
 
-.myprojects {
-  height: 151px;
-  width: 362px;
+.projectcard-1 {
+  position: relative;
+  height: 150px;
+  width: 365px;
   background-color: white;
+  background-image: url("../assets/noproject.png");
+  opacity: 0.7;
   margin: 24px auto;
   box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
   border-radius: 25px;
 }
-.projectboxs{
+
+.projectboxs {
+  
   height: 100%;
   width: 85%;
   display: flex;
@@ -24,8 +29,6 @@
   flex-wrap: wrap;
   margin: 24px auto;
   justify-content: center;
- 
-
 }
 .largeprojectsstext {
   color: white;
@@ -34,8 +37,8 @@
   font-size: 50px;
   font-family: monospace;
   margin: 0 auto;
-} 
-.projectlink{
+}
+.projectlink {
   color: white;
   background-color: #ff9c0c;
   height: 36px;
@@ -48,21 +51,36 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-.previewlink{
-  float: right;
-  margin-top: 104px;
-  margin-right: 10px;
+.previewlink {
+  position: absolute;
+  bottom: 8px;
+  left: 86%;
 }
+.projecttitle {
+  filter: drop-shadow(0 0 0.85rem rgb(0, 0, 0));
+  text-align: center;
+  margin: 10px auto -6px auto;
+  font-size: 26px;
+  font-family: 'Calibri';
 
-.projectlink:hover{
-  background-color:rgb(0, 0, 0);
+  
+}
+.projectinfo{
+  filter: drop-shadow(0 0 0.85rem rgb(0, 0, 0));
+  text-align: center;
+  font-size: 18px;
+  margin: 10px auto -6px auto;
+
+  font-family: 'Calibri';
+}
+.projectlink:hover {
+  background-color: rgb(0, 0, 0);
   background: linear-gradient(45deg, #c3aa85, #ff9c0c, #c3aa85);
   background-size: 400% 400%;
   -webkit-animation: div-text-hover 2s ease infinite;
   animation: div-text-hover 2s ease infinite;
   animation-fill-mode: forwards;
   color: white;
-
 }
 @media screen and (min-width: 1000px) {
   .projectss {
@@ -78,5 +96,4 @@
     font-family: monospace;
     margin: 0 auto;
   }
-
 }
