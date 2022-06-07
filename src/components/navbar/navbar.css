@@ -1,19 +1,19 @@
 .navbtn {
-  font-size: 25px;
-  text-align: center;
+  margin-left: auto !important
 }
 .navbarcss {
-  background-color: #ff9c0c;
+
+  background: radial-gradient(circle at 50% 50%,#d0800a, #d0800a);
+	backdrop-filter: blur(0.4px);
+
   box-shadow: 0px 0px 10px 0px #000000;
+  
 }
 
 @media screen and (min-width: 800px) {
   .navbarcss {
-    background-color: #ff9c0c;
-    margin-top: 23px;
-    margin-left: 178px;
-    margin-right: 178px;
-    border-radius: 16px;
-    box-shadow: 0px 0px 20px 0px #00000052;
+    background: radial-gradient(circle at 50% 50%,#d0800a, #d0800a);
+    backdrop-filter: blur(0.4px);
+    box-shadow: 0px 0px 10px 0px #000000;
   }
 }

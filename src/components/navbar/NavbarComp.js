@@ -3,7 +3,6 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import "./navbar.css";
 import logo from "../assets/logo.svg";
 import { Link } from "react-scroll";
-
 export default class navbar extends Component {
   render() {
     return (
@@ -45,7 +44,8 @@ export default class navbar extends Component {
                       About
                     </Link>
                   </Nav.Link>
-              
+            
+
                 </Nav>
               </Navbar.Collapse>
             </Container>
