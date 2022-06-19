@@ -1,0 +1,413 @@
+.App {
+  text-align: center;
+  background-color: var(--background-color);
+}
+.loadeer {
+  background-color: var(--background-color);
+  height: 100vh;
+  width: 100%;
+  justify-content: flex-end;
+  justify-items: center;
+  display: flex;
+  align-items: center;
+}
+.lawo {
+  width: 440px;
+  height: 440px;
+  margin: 0 auto;
+}
+:root {
+  --darkb: rgb(19 19 19);
+  --white: rgb(236, 236, 236);
+  --secback: rgb(37, 37, 37);
+  --secbacklight: rgb(176, 176, 176);
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-weight: var(--font-weight);
+  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+}
+
+body.light {
+  --background-color: var(--white);
+  --text-color: var(--darkb);
+  --secend-background-color: var(--secbacklight);
+  --font-weight: 400;
+}
+
+body.dark {
+  --background-color: var(--darkb);
+  --secend-background-color: var(--secback);
+  --text-color: var(--white);
+  --font-weight: 500;
+}
+#darkMode {
+  background-size: 30px 30px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#darkMode:focus {
+  filter: none;
+  background: var(--background-color);
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+#darkMode.clicked {
+  color: var(--text-color);
+  filter: none !important;
+  background: var(--background-color);
+}
+
+.socials {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  padding: 16px 16px;
+  scroll-behavior: smooth;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.socialsiconback {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  height: 55px;
+  width: 55px;
+  font-size: 34px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.socialsiconback:hover {
+  background: linear-gradient(45deg, #191919, #ffffff42, #191919);
+  background-size: 400% 400%;
+  animation: div-text-hover 2s ease infinite;
+  animation-fill-mode: forwards;
+  color: var(--text-color);
+}
+@keyframes div-text-hover {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.iconsbackcirclepadding {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.cardscointaiiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 64px;
+}
+.projecttitle {
+  color: var(--text-color);
+}
+.aboutprojecttext {
+  color: var(--text-color);
+}
+.pgithublink {
+  color: var(--text-color);
+  font-size: 20px;
+
+  background-color: var(--background-color);
+}
+.pgithublink:hover {
+  color: var(--secbacklight);
+}
+@media screen and (min-width: 1100px) {
+  .cardscointaiiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 64px;
+  }
+}
+.carde {
+  position: relative;
+  display: flex;
+  transition: all 0.3s;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--background-color);
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  box-shadow: #ffffff2e 0px 0px 0px 8px;
+}
+
+.projimg {
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+}
+.projimg:hover {
+  filter: grayscale(0);
+}
+.carde:hover {
+  box-shadow: #ffffff2e 0px 0px 20px 0px;
+}
+.outboxlikeshadow {
+  height: 100%;
+  width: 100%;
+  background-color: chocolate;
+}
+
+.card_style {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.aboutproject {
+  text-align: center;
+  color: var(--text-color);
+}
+.projectimage {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+.row__poster:hover {
+  transform: scale(1.04);
+}
+.largeprojectsstext {
+  color: var(--text-color);
+  text-align: center;
+  padding-top: 110px;
+  font-size: 28px;
+  font-family: monospace;
+  margin: 0 auto;
+}
+.projectss {
+  background: var(--secend-background-color);
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 1100px) {
+  .largeprojectsstext {
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 110px;
+    font-size: 28px;
+    font-family: monospace;
+    margin: 0 auto;
+  }
+}
+.Rcolumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.hellod::after {
+  content: "LAWA";
+  font-size: 14px;
+  padding-left: 5px;
+  color: var(--text-color);
+}
+.navbtn {
+  margin-left: auto !important;
+}
+.thebtn {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px;
+}
+.nameontop {
+  color: var(--text-color);
+  margin: 0 auto;
+}
+.navbarbtnonmob {
+  color: var(--text-color);
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px white;
+}
+
+.thebtn {
+  position: relative;
+  color: var(--text-color);
+}
+
+.thebtn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--text-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.thebtn:hover {
+  color: var(--text-color);
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+.thebtn:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.navbarcss {
+  background-color: var(--secend-background-color);
+  color: var(--text-color);
+  backdrop-filter: blur(0.4px);
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+
+@media screen and (min-width: 800px) {
+  .navbarcss {
+    background-color: var(--secend-background-color);
+    backdrop-filter: blur(0.4px);
+    box-shadow: 0px 0px 5px 0px #000000;
+    color: var(--text-color);
+  }
+}
+.aboutt {
+  background-color: var(--background-color);
+
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  padding: 0px 50px;
+}
+.aboutconts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+.aboutcont {
+  color: var(--text-color);
+  text-align: left;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+}
+.abotmetexticonst {
+  background-color: var(--secend-background-color);
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 11px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.reallaboutme {
+  background-color: var(--secend-background-color);
+
+  border-radius: 25px;
+  padding: 25px;
+  margin-right: 11px;
+
+  margin-bottom: 44px;
+  box-shadow: #ffffff2e -7px 6px 10px 0px, rgb(9 30 66 / 8%) -13px 17px 0px 1px;
+}
+.abotmetextlines {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: left;
+  align-items: center;
+  align-content: space-between;
+}
+.aboutcontimg {
+  margin: 10px 0px 66px 0px;
+}
+
+.largefeaturestext {
+  color: var(--text-color);
+  text-align: center;
+  padding-top: 70px;
+  font-size: 60px;
+  font-family: monospace;
+  margin: 0 auto;
+}
+.aboutimageshadow {
+  height: 400px;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 25px;
+  transition: transform 0.3s; /* Animation */
+}
+.aboutimageshadow:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+@media screen and (min-width: 1000px) {
+  .aboutt {
+    background-color: var(--background-color);
+
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    padding: 0px 50px;
+  }
+
+  .aboutcontimg {
+    text-align: center;
+    font-family: monospace;
+    margin: 0 auto;
+    padding-top: 102px;
+  }
+
+  .largefeaturestext {
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 140px;
+    font-size: 60px;
+    font-family: monospace;
+    margin: 0 auto;
+  }
+}

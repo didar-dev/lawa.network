@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "image":"https://i.imgur.com/kD5YOFo.png",
+        "Project_name":"Protfilio",
+        "link":"https://www.lawa.network",
+        "github":"#",
+        "aboutproject":"This protfilio is one of the websites that i coded "
+    },
+    {
+        "id": 2,
+        "image":"https://i.imgur.com/kD5YOFo.png",
+        "Project_name":"Coming Project",
+        "link":"#",
+        "github":"https://www.lawa.network",
+        "aboutproject":"Projects on the way :D wil be there soon"
+    }
+]
